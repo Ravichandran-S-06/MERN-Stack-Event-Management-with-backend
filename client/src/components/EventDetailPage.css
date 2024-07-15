@@ -1,0 +1,83 @@
+.event-detail-page {
+    display: flex;
+    justify-content: center;
+    
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  .event-detail-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    height:50%;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .event-description {
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .event-date {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .register-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .registration-status {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .registration-status.registered {
+    color: #28a745;
+  }
+  
+  .registration-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .registration-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+  }
+  
+  .registration-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+  
+  .loading {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-top: 50px;
+  }

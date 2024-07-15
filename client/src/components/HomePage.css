@@ -1,0 +1,50 @@
+/* src/components/HomePage.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Adjust font-family as needed */
+    overflow: hidden; /* Disable scrollbars */
+  }
+
+.homepage {
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  header {
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .button-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .button-container a:hover {
+    background-color: #0056b3;
+  }
+  
+  .sample-image {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+  }

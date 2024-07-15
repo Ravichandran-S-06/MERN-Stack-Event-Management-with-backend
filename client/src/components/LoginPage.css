@@ -1,0 +1,66 @@
+/* src/components/LoginPage.css */
+.login-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.login-page h2 {
+  margin-bottom: 20px;
+  color: #1877f2;
+}
+
+.login-page form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-page input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #dddfe2;
+  border-radius: 5px;
+}
+
+.login-page button {
+  background-color: #1877f2;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-page button:hover {
+  background-color: #166fe5;
+}
+
+.message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+}
+
+.success {
+  background-color: #e7f3e5;
+  color: #2e7d32;
+}
+
+.error-message {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: red;
+  margin-top: 10px;
+}
