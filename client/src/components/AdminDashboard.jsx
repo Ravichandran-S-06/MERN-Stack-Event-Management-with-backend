@@ -10,6 +10,7 @@ function AdminDashboard() {
   const [date, setDate] = useState('');
   const [activeView, setActiveView] = useState('addEvents');
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const fetchEvents = async () => {
     try {
@@ -43,21 +44,34 @@ function AdminDashboard() {
     }
   };
 
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
   return (
     <div className="admin-dashboard">
-      <div className="row no-gutters">
+      <button className="sidebar-toggle d-md-none" onClick={toggleSidebar}>
+        ☰
+      </button>
+      <div className={`row no-gutters ${sidebarOpen ? 'sidebar-open' : ''}`}>
         <div className="col-md-3 sidebar">
           <h2 className="mb-4">Admin Dashboard</h2>
           <div className="d-flex flex-column">
             <button
               className={`btn btn-primary mb-3 ${activeView === 'addEvents' ? 'active' : ''}`}
-              onClick={() => setActiveView('addEvents')}
+              onClick={() => {
+                setActiveView('addEvents');
+                setSidebarOpen(false);
+              }}
             >
               Add Events
             </button>
             <button
               className={`btn btn-primary mb-3 ${activeView === 'participants' ? 'active' : ''}`}
-              onClick={() => setActiveView('participants')}
+              onClick={() => {
+                setActiveView('participants');
+                setSidebarOpen(false);
+              }}
             >
               Registered Participants
             </button>
