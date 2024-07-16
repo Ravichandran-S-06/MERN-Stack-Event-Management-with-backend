@@ -149,4 +149,7 @@
     width: 100%;
     max-width: none;
   }
+  .event-details{
+    margin-top: 30px;
+  }
 }
